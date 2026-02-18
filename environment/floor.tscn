@@ -1,3 +1,45 @@
-[gd_scene format=3 uid="uid://ck671qb37ry1l"]
+[gd_scene format=4 uid="uid://ck671qb37ry1l"]
 
-[node name="Floor" type="Node2D" unique_id=1078511568]
+[ext_resource type="Texture2D" uid="uid://byg6qw1jphknm" path="res://environment/img/oak_woods_tileset.png" id="1_hwfou"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_k3jw2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7jos"]
+texture = ExtResource("1_hwfou")
+texture_region_size = Vector2i(24, 24)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[sub_resource type="TileSet" id="TileSet_1eb4u"]
+tile_size = Vector2i(24, 24)
+physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_k3jw2")
+sources/1 = SubResource("TileSetAtlasSource_m7jos")
+
+[node name="Floor" type="TileMapLayer" unique_id=689828446]
+tile_map_data = PackedByteArray("AAD+/wAAAQAFAAAAAAD//wAAAQAGAAAAAAAAAAAAAQAHAAAAAAABAAAAAQAIAAAAAAACAAAAAQAFAAAAAAADAAAAAQAGAAAAAAAEAAAAAQAHAAAAAAAFAAAAAQAIAAAAAAAGAAAAAQAFAAAAAAAHAAAAAQAGAAAAAAAIAAAAAQAHAAAAAAAJAAAAAQAIAAAAAAAKAAAAAQAFAAAAAAALAAAAAQAGAAAAAAAMAAAAAQAHAAAAAAANAAAAAQAIAAAAAAAKAP7/AQAAAAUAAAAKAP//AQAAAAYAAAALAP7/AQABAAUAAAAMAP7/AQACAAUAAAANAP7/AQADAAUAAAANAP//AQADAAYAAAALAP//AQAKAAIAAAAMAP//AQAKAAIAAAAOAAAAAQAFAAAAAAAPAAAAAQAGAAAAAAAQAAAAAQAHAAAAAAARAAAAAQAIAAAAAAASAAAAAQAGAAAAAAATAAAAAQAHAAAAAAAUAAAAAQAIAAAAAAASAP//AQAKAAIAAAATAP//AQAKAAIAAAAUAP//AQAKAAIAAAATAP7/AQAKAAIAAAATAP3/AQAKAAIAAAAVAAAAAQAFAAAAAAAWAAAAAQAGAAAAAAAXAAAAAQAHAAAAAAAYAAAAAQAIAAAAAAAZAAAAAQAFAAAAAAAaAAAAAQAGAAAAAAAbAAAAAQAHAAAAAAAcAAAAAQAIAAAAAAAdAAAAAQAFAAAAAAAeAAAAAQAGAAAAAAAfAAAAAQAHAAAAAAAgAAAAAQAIAAAAAAAhAAAAAQAIAAAAAAAZAP7/AQAAAAUAAAAZAP//AQAAAAYAAAAaAP7/AQABAAUAAAAbAP7/AQACAAUAAAAcAP7/AQADAAUAAAAcAP//AQADAAYAAAAaAP//AQAKAAIAAAAbAP//AQAKAAIAAAAkAAAAAQAFAAAAAAAlAAAAAQAGAAAAAAAmAAAAAQAHAAAAAAAnAAAAAQAIAAAAAAA=")
+tile_set = SubResource("TileSet_1eb4u")
