@@ -140,12 +140,13 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 15.0
+"speed": 10.0
 }]
 
 [node name="player" type="CharacterBody2D" unique_id=232012193]
 scale = Vector2(0.1, 0.1)
 script = ExtResource("1_2uvqg")
+speed = 250
 metadata/_edit_group_ = true
 
 [node name="col_player" type="CollisionShape2D" parent="." unique_id=933902560]
@@ -156,7 +157,6 @@ shape = SubResource("RectangleShape2D_6wior")
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_p5tca")
 animation = &"idle"
-frame_progress = 0.23072799
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2105980518]
 zoom = Vector2(1.5, 1.5)
