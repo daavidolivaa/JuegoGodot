@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://2em0kqpu43rk"]
+
+[ext_resource type="Script" uid="uid://dbk86ovhmsqtb" path="res://contador/contador.gd" id="1_t8fo4"]
+[ext_resource type="Texture2D" uid="uid://d2uoieheimq4d" path="res://coleccionable/img/Bronze_1.png" id="2_p4b7f"]
+[ext_resource type="Texture2D" uid="uid://djvhebm8rlf0u" path="res://coleccionable/img/Bronze_2.png" id="3_2lm7d"]
+[ext_resource type="Texture2D" uid="uid://b15xlt0csuerp" path="res://coleccionable/img/Bronze_3.png" id="4_i5ncg"]
+[ext_resource type="Texture2D" uid="uid://bqyu7sktr14hl" path="res://coleccionable/img/Bronze_4.png" id="5_82kxq"]
+[ext_resource type="Texture2D" uid="uid://d1rdbk4fo7gwy" path="res://coleccionable/img/Bronze_5.png" id="6_227ti"]
+[ext_resource type="Texture2D" uid="uid://bs6cy87suyq1i" path="res://coleccionable/img/Bronze_6.png" id="7_iv3cb"]
+[ext_resource type="Texture2D" uid="uid://cj857koou0v6u" path="res://coleccionable/img/Bronze_7.png" id="8_38b6j"]
+[ext_resource type="Texture2D" uid="uid://3yycaltxu33d" path="res://coleccionable/img/Bronze_8.png" id="9_3y36p"]
+[ext_resource type="Texture2D" uid="uid://bk4qkfqe0jdmd" path="res://coleccionable/img/Bronze_9.png" id="10_e4h4i"]
+[ext_resource type="Texture2D" uid="uid://cgn5oo7n3acb8" path="res://coleccionable/img/Bronze_10.png" id="11_7uecn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t8fo4"]
+font_size = 20
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ns2rh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p4b7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2lm7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i5ncg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_82kxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_227ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_iv3cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_38b6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3y36p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_e4h4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7uecn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="Contador" type="Control" unique_id=77934438]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 36.0
+offset_right = 59.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t8fo4")
+
+[node name="hbox" type="HBoxContainer" parent="." unique_id=159400848]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="lbl_contador" type="Label" parent="hbox" unique_id=286641814]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_t8fo4")
+
+[node name="ani_contador" type="AnimatedSprite2D" parent="hbox" unique_id=2067245724]
+position = Vector2(-19.000002, 21)
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_ns2rh")
+frame = 2
+frame_progress = 0.24032372
