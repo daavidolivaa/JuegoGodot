@@ -8,7 +8,8 @@ func _ready() -> void:
 
 func _on_ene_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("jugadores"):
-		get_tree().reload_current_scene()
+		body.morir()
+		
 
 # Variable para indicar si vamos hacia delante (1) o atrás (-1)
 var sentido = 1

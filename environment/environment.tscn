@@ -11,10 +11,10 @@
 position = Vector2(47, 345)
 
 [node name="Floor" parent="." unique_id=689828446 instance=ExtResource("1_8a1ph")]
-position = Vector2(2, 63)
+position = Vector2(1, 64)
 
 [node name="player" parent="." unique_id=232012193 instance=ExtResource("2_wjl7u")]
-position = Vector2(1.9999999, -11)
+position = Vector2(-0.99999994, 38.999996)
 
 [node name="Fondo" parent="." unique_id=438150180 instance=ExtResource("3_wjl7u")]
 
