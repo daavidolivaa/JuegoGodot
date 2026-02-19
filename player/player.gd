@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var gravity_scale = 2
+<<<<<<< HEAD
 @export var speed = 250
 @export var acceleration = 600
 @export var friction = 500
@@ -11,6 +12,16 @@ extends CharacterBody2D
 @onready var ani_player = $ani_player
 # Referencia al contador
 @onready var contador: Control = $CanvasLayer/Contador
+=======
+@export var speed = 500
+@export var acceleration = 600
+@export var friction = 1500
+@export var jump_force = -700
+@export var air_acceleration = 2000
+@export var air_friction = 700
+
+@onready var ani_player = $ani_player
+>>>>>>> 62ef7e964c0b56edb539e7aa133b931e89a09a11
 
 func apply_gravity(delta):
 	if not is_on_floor():
@@ -56,6 +67,7 @@ func update_animation(input_axis):
 	else:
 		ani_player.speed_scale=1
 		ani_player.play("idle")
+<<<<<<< HEAD
 
 # Contador de monedas
 var monedas: int = 0
@@ -69,3 +81,5 @@ func _ready() -> void:
 func add_moneda():
 	monedas+=1
 	contador.actualizar(monedas)
+=======
+>>>>>>> 62ef7e964c0b56edb539e7aa133b931e89a09a11
