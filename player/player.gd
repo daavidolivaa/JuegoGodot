@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var friction = 500
 @export var jump_force = -700
 @export var air_acceleration = 2000
-@export var air_friction = 450
+@export var air_friction = 250
 
 @onready var ani_player = $ani_player
 # Referencia al contador
